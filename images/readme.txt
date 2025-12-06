@@ -1,14 +1,21 @@
-SHINE JEWEL TECH - IMAGES FOLDER
+SHINE JEWEL TECH - IMAGES FOLDER INSTRUCTIONS
 
-1. Create a folder named 'images' in the public root of your project.
-2. Place your logo file there and name it 'logo.png'.
-3. Place your machine images there and name them exactly as referenced in constants.ts:
+CRITICAL FOR DEPLOYMENT:
 
-   - laser-cutting.jpg
-   - chain-making.jpg
-   - polishing-tumbler.jpg
-   - cnc-router.jpg
-   - induction-casting.jpg
-   - bangle-turning.jpg
+1. Create a folder named 'public' in the root directory of your project (at the same level as index.html).
+2. Move your 'images' folder INSIDE the 'public' folder.
+   
+   Final structure should look like this:
+   /public
+     /images
+       logo.png
+       laser-cutting.jpg
+       chain-making.jpg
+       polishing-tumbler.jpg
+       cnc-router.jpg
+       induction-casting.jpg
+       bangle-turning.jpg
 
-Note: If you are using Vercel, just ensure this 'images' folder is at the root level (same level as index.html) or in the 'public' folder if using a bundler like Vite.
+3. Do NOT change the code references. The code refers to '/images/...' which Vite will automatically resolve to 'public/images/...'.
+
+If you do not put the images in the 'public' folder, they will not appear on the live website after deployment.
