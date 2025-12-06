@@ -6,5 +6,8 @@ export default defineConfig({
   plugins: [react()],
   build: {
     outDir: 'dist',
+  },
+  preview: {
+    allowedHosts: ['shine-jewel-tech-real.onrender.com']
   }
 })
